@@ -8,7 +8,7 @@ const chatHistorySchema = new mongoose.Schema({
       text: String,
       timestamp: { type: Date, default: Date.now }
     }
-  ]
+  ]cd "/Users/umanktiwari/Documents/v front end/Hackathon internal 24hrs/hackathon-app"
 });
 
 module.exports = mongoose.model('ChatHistory', chatHistorySchema);
