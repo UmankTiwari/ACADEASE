@@ -1,27 +1,30 @@
 import React, { useState } from 'react';
 
-function InputArea({ onSend }) {
-  const [message, setMessage] = useState('');
+export default function InputArea({ onSend }) {
+  const [text, setText] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (message.trim()) {
-      onSend(message);
-      setMessage('');
+  const handleSend = () => {
+    if (text.trim() === '') {
+      return;
     }
+    onSend(text);
+    setText('');
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Type your message..."
+    <div className="flex gap-2 p-4">
+      <input 
+        value={text} 
+        onChange={(e) => setText(e.target.value)} 
+        placeholder="Type a message..." 
+        className="flex-1 p-2 border rounded"
       />
-      <button type="submit">Send</button>
-    </form>
+      <button 
+        onClick={handleSend}
+        className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+      >
+        Send
+      </button>
+    </div>
   );
 }
-
-export default InputArea;

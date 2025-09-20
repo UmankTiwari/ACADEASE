@@ -6,5 +6,3 @@ const searchDataSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('SearchData', searchDataSchema);
-
-module.exports = mongoose.model('SearchData', searchDataSchema);

@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Full Stack with Auto-Refresh",
+      "type": "shell",
+      "command": "npm run dev-open",
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Preview: Production Build",
+      "type": "shell",
+      "command": "npm run start:prod",
+      "problemMatcher": [],
+      "group": "build"
+    }
+  ]
+}

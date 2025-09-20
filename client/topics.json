@@ -1,0 +1,26 @@
+[
+  {
+    "id": "computer-basics",
+    "title": "Computer Basics",
+    "description": "Understand the fundamental components and concepts of modern computers.",
+    "path": "/computer-basics"
+  },
+  {
+    "id": "hardware-software",
+    "title": "Hardware vs. Software",
+    "description": "Learn the difference between the physical parts of a computer and the instructions that tell them what to do.",
+    "path": "/hardware-software"
+  },
+  {
+    "id": "bits-transistors",
+    "title": "Bits & Transistors",
+    "description": "Dive into the building blocks of digital information and the switches that control them.",
+    "path": "/bits-transistors"
+  },
+  {
+    "id": "python-lessons",
+    "title": "Interactive Python",
+    "description": "Explore programming concepts with interactive lessons in Python.",
+    "path": "/python-lessons"
+  }
+]

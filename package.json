@@ -1,0 +1,19 @@
+{
+  "name": "hackathon-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev-open": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "backend": "cd server && node server.js",
+    "frontend": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "deploy": "./deploy.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "open-cli": "^8.0.0",
+    "nodemon": "^3.1.0"
+  }
+}
